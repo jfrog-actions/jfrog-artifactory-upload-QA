@@ -1,0 +1,13 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: subhradeep-workflow-simple
+on:
+  workflow_dispatch:
+jobs:
+  my-simple-job:
+    steps:
+      - name: Step A
+        uses: cloudbees-io/checkout@v1
+
+      - name: Step B
+        uses: cloudbees-io/checkout@v1
