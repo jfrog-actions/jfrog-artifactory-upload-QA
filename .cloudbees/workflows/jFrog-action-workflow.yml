@@ -9,7 +9,7 @@ on:
 jobs:
   jfrog-repo-job:
     steps:
-      - name: checkout-the-source-code
+      - name: checkout-source-code
         uses: cloudbees-io/checkout@v1
       - name: jfrog-actions-workflow-upload-file
         uses: cloudbees-io/jfrog-artifactory-upload-file@v1
